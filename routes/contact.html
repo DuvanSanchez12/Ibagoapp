@@ -1,0 +1,26 @@
+<div class="my-5 pt-4 position-relative">
+    <div class="container d-flex flex-column pt-5 text-center">
+
+        <h1 class="fw-bold pb-4">Mantente en contacto con nosotros</h1>
+
+        <form class="d-flex flex-column align-items-center" id="contactForm">
+            <div class="mb-3 mx-auto w-50">
+                <input type="text" maxlength="30" class="form-control" name="nombre" id="nombre"
+                       placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="mb-3 mx-auto w-50">
+                <input type="email" maxlength="30" class="form-control" name="correo" id="correo"
+                       placeholder="Ingresa tu correo">
+            </div>
+
+            <button type="submit" class="btn">Guardar</button>
+        </form>
+
+        <div id="mensajeRespuesta" class="mt-3" aria-live="polite"></div>
+
+        <h1 class="pt-3 fw-bold text-dark">Lista de contactos</h1>
+
+        <div id="personasList" class="p-5"></div>
+    </div>
+</div>

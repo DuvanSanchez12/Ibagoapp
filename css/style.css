@@ -1,0 +1,165 @@
+body{
+    background: #ffffff;
+}
+#app {
+  min-height: 100vh;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color:  #f9fafbb4;
+    backdrop-filter: blur(2px);
+}
+.font-text{
+    font-family: "Manrope", sans-serif;
+}
+.font{
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    color: #000;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.font:active{
+  color: #f3c99c
+}
+
+.font:hover{
+  color: #f3c99c
+}
+
+.a{
+  color: #f3c99c
+}
+
+.text-color{
+    color: #f3c99c;
+}
+.font:hover{
+    color: #f3c99c;
+}
+.img-icon{
+    border-radius: 8px;
+}
+.btn{
+    border: 1px solid #000;
+    color:#000;
+    border-radius: 6px;
+    padding: 6px 22px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.btn:hover{
+    background: #f3c99c;
+    color:#000; 
+    border-color: #00000000;
+    transition: all 0.3s ease;
+}
+
+.btn2{
+    border: 1px solid #ffffff;
+    color:#ffffff;
+    border-radius: 6px;
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.container{
+    height: 500px;
+    width: 80%;
+}
+#map {
+  z-index: 1;
+}
+
+.map-overlay {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.map-text {
+  z-index: 3;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fixed-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-perfil{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.tech-icons img {
+  width: 28px;
+  height: 28px;
+  margin: 0 8px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+}
+
+.tech-icons a {
+  text-decoration: none;
+  outline: none;
+}
+
+/* Fondo oscuro detrás del modal */
+.contact-modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Card centrada */
+.contact-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 30px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.3s ease;
+  text-align: center;
+}
+
+/* Animación suave */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

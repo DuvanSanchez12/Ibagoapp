@@ -26,6 +26,10 @@ body{
   color: #f3c99c
 }
 
+.font:focus{
+    color: #f3c99c
+}
+
 .font:hover{
   color: #f3c99c
 }
@@ -109,8 +113,6 @@ body{
 }
 
 .tech-icons img {
-  width: 28px;
-  height: 28px;
   margin: 0 8px;
   transition: transform 0.3s ease, filter 0.3s ease;
 }

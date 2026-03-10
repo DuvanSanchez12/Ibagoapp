@@ -165,3 +165,8 @@ body{
     transform: translateY(0);
   }
 }
+#personasList {
+    max-height: 400px;   /* Ajusta la altura que quieras */
+    overflow-y: auto;    /* Scroll vertical */
+    overflow-x: hidden;  /* Sin scroll horizontal */
+}

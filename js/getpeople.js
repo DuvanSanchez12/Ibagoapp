@@ -12,12 +12,16 @@ try {
     object.data.forEach((persona) => {
       
     const card = document.createElement("div");
-    card.className = "card mb-3 border-0 w-50 mx-auto shadow-sm";
+    card.className = "card mb-3 w-75 mx-auto shadow-sm border-0 rounded-3";
 
     card.innerHTML = `
-    
-      <h1>${persona.nombre}</h1>
-    `;
+  <div class="card-body border-top border-2  d-flex flex-column align-items-start">
+    <h5 class="card-title fw-bold mb-1 text-primary">${persona.nombre}</h5>
+    <p class="card-text text-muted mb-0">
+      <i class="bi bi-envelope"></i> ${persona.correo}
+    </p>
+  </div>
+`;
 
     personasList.appendChild(card);
   });

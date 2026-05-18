@@ -7,7 +7,7 @@ const team = [
     description: 'Apasionado por la programación y el aprendizaje constante. Responsable de la arquitectura del sistema y la integración de tecnologías clave para IbaGO.',
     image: '/images/duvan.jpg',
     linkedin: 'https://www.linkedin.com/in/duvan-camilo-rodriguez-sanchez-810433270',
-    instagram: 'https://www.instagram.com/camilo_sanchez547'
+    instagram: 'https://www.instagram.com/duvan_sanchez547'
   },
   {
     name: 'Jonatan Stiven Fernández',

@@ -4,7 +4,7 @@ const team = [
   {
     name: 'Duvan Camilo Rodriguez',
     role: 'Líder del proyecto | Backend Developer',
-    instagram: 'https://www.instagram.com/camilo_sanchez547'
+    instagram: 'https://www.instagram.com/duvan_sanchez547'
   },
   {
     name: 'Jonatan Stiven Fernández',

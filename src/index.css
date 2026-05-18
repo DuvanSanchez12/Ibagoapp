@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) translateX(50px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.particles-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(243, 201, 156, 0.4);
+  animation: floatParticle linear infinite;
+}
+
+.particle:nth-child(1) { width: 10px; height: 10px; left: 10%; top: -10%; animation-duration: 25s; }
+.particle:nth-child(2) { width: 15px; height: 15px; left: 20%; top: -15%; animation-duration: 20s; animation-delay: 2s; }
+.particle:nth-child(3) { width: 8px; height: 8px; left: 35%; top: -8%; animation-duration: 28s; animation-delay: 5s; }
+.particle:nth-child(4) { width: 20px; height: 20px; left: 50%; top: -20%; animation-duration: 22s; animation-delay: 3s; }
+.particle:nth-child(5) { width: 12px; height: 12px; left: 65%; top: -12%; animation-duration: 26s; animation-delay: 7s; }
+.particle:nth-child(6) { width: 18px; height: 18px; left: 75%; top: -18%; animation-duration: 24s; animation-delay: 1s; }
+.particle:nth-child(7) { width: 6px; height: 6px; left: 85%; top: -6%; animation-duration: 30s; animation-delay: 4s; }
+.particle:nth-child(8) { width: 14px; height: 14px; left: 5%; top: -14%; animation-duration: 21s; animation-delay: 6s; }
+.particle:nth-child(9) { width: 9px; height: 9px; left: 40%; top: -9%; animation-duration: 27s; animation-delay: 8s; }
+.particle:nth-child(10) { width: 16px; height: 16px; left: 55%; top: -16%; animation-duration: 23s; animation-delay: 9s; }
+.particle:nth-child(11) { width: 11px; height: 11px; left: 70%; top: -11%; animation-duration: 29s; animation-delay: 10s; }
+.particle:nth-child(12) { width: 7px; height: 7px; left: 90%; top: -7%; animation-duration: 19s; animation-delay: 2s; }
+.particle:nth-child(13) { width: 13px; height: 13px; left: 15%; top: -13%; animation-duration: 25s; animation-delay: 11s; }
+.particle:nth-child(14) { width: 19px; height: 19px; left: 30%; top: -19%; animation-duration: 21s; animation-delay: 5s; }
+.particle:nth-child(15) { width: 5px; height: 5px; left: 45%; top: -5%; animation-duration: 32s; animation-delay: 3s; }
+.particle:nth-child(16) { width: 17px; height: 17px; left: 60%; top: -17%; animation-duration: 24s; animation-delay: 12s; }
+
+#map {
+  z-index: 1;
+}
+
+.map-overlay {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.map-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.map-text {
+  z-index: 3;
+}
+
+.map-text.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .stats-section > div {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .places-section > div {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .navbar-links {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-section > div {
+    grid-template-columns: 1fr !important;
+  }
+}
